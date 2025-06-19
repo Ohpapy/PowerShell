@@ -1,0 +1,5 @@
+"Description","MACAddress","IPAddress","DefaultIPGateway"
+"VirtualBox Host-Only Ethernet Adapter","0A:00:27:00:00:0C","System.String[]",
+"VMware Virtual Ethernet Adapter for VMnet1","00:50:56:C0:00:01","System.String[]",
+"VMware Virtual Ethernet Adapter for VMnet8","00:50:56:C0:00:08","System.String[]",
+"Realtek RTL8822CE 802.11ac PCIe Adapter","00:E9:3A:28:0D:83","System.String[]","System.String[]"
