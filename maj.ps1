@@ -1,4 +1,4 @@
-$csvfile = Import-Csv -Path "./forme.csv"
+$csvfile = Import-Csv -Path "./SoftwareInventory.csv"
 
 foreach ($info in $csvfile) {
     $name = $info.Name
@@ -11,7 +11,7 @@ foreach ($info in $csvfile) {
     }
 
     if ($vendor -like "*Microsoft*") {
-        $searchResult = winget search --name $name | Select-String $name
+        $searchResult = winget search --name $name | Select-String -SimpleMatch $name
 
         if (-not $searchResult) {
             Write-Output "Aucune version trouvee sur winget pour $name"
